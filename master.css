@@ -1,0 +1,234 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+#header-img{
+  width: 30px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+.navbar {
+  margin-bottom:0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  margin-top: 50px;
+  background-image: url(http://www.wallpapersshock.com/uploads/large/hd-music-wallpapers/free-hd-laptop-music-wallpapers-good-download.jpg);
+  background-size: 1800px 1000px;
+  color: white;
+}
+#main h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#main input[type=email] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+#main input[type=submit] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+#main input[type=submit]:hover {
+  background-color: red;
+  transition: background-color 2s;
+}
+@media (max-width: 650px) {
+  #main {
+    margin-top: 120px;
+  }
+}
+
+#features {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-right: 70px;
+  color: black;
+}
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+  width: 20vw;
+  color: #D3D3D3;
+}
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+}
+
+#how-it-works {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+#how-it-works iframe {
+  max-width: 30000px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#pricing #premium, #pricing #wireless, #pricing #sports {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 10px ridge #D3D3D3;
+  border-radius: 5px;
+}
+#pricing #premium .level, #pricing #wireless .level, #pricing #sports .level {
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#pricing #premium h2, #pricing #wireless h2, #pricing #sports h2 {
+  margin-top: 15px;
+}
+#pricing #premium ol, #pricing #wireless ol, #pricing #sports ol {
+  margin: 15px 0;
+}
+#pricing #premium ol li, #pricing #wireless ol li, #pricing #sports ol li {
+  padding: 5px 0;
+}
+#pricing #premium button, #pricing #wireless button, #pricing #sports button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #172A3A;
+  font-weight: 400;
+  color: white;
+}
+#pricing #premium button:hover, #pricing #wireless button:hover, #pricing #sports button:hover {
+  background-color: #AAF683;
+  transition: background-color 2s;
+}
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  #pricing #premium, #pricing #wireless, #pricing #sports {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul li {
+  padding: 0 10px;
+}
+footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
